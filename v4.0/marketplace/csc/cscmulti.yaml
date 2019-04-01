@@ -1,0 +1,8 @@
+apiVersion: operators.coreos.com/v1
+kind: CatalogSourceConfig
+metadata:
+  name: multicsc 
+  namespace: openshift-marketplace
+spec:
+  packages: etcd,amq-streams,descheduler-test,mongodb-enterprise-test
+  targetNamespace: openshift-operators

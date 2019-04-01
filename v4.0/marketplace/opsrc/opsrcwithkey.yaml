@@ -1,0 +1,16 @@
+apiVersion: "operators.coreos.com/v1"
+kind: "OperatorSource"
+metadata:
+  name: "testkey"
+  namespace: "openshift-marketplace"
+  labels:
+    opsrc-provider: testkey
+spec:
+  type: appregistry
+  endpoint: "https://quay.io/cnr"
+  registryNamespace: ""
+  displayName: "testkey"
+  publisher: "testkey"
+  authorizationToken:
+    secretName: mysecret
+    namespace: openshift-marketplace

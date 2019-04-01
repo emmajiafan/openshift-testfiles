@@ -1,0 +1,14 @@
+apiVersion: v1
+items:
+- apiVersion: operators.coreos.com/v1
+  kind: CatalogSourceConfig
+  metadata:
+    name: wrongtest
+    namespace: openshift-marketplace
+  spec:
+    packages: 
+    targetNamespace: openshift-operators 
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""
