@@ -1,0 +1,13 @@
+apiVersion: "operators.coreos.com/v1"
+kind: "OperatorSource"
+metadata:
+  name: "opsrcbundle"
+  namespace: "openshift-marketplace"
+  labels:
+    opsrc-provider: opsrcbundle
+spec:
+  type: appregistry
+  endpoint: "https://quay.io/cnr"
+  registryNamespace: "kaka1"
+  displayName: "opsrcbundle"
+  publisher: "opsrcbundle"

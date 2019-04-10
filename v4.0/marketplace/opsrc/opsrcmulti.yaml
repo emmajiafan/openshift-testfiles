@@ -1,0 +1,13 @@
+apiVersion: "operators.coreos.com/v1"
+kind: "OperatorSource"
+metadata:
+  name: "opsrcmulti"
+  namespace: "openshift-marketplace"
+  labels:
+    opsrc-provider: opsrcmulti
+spec:
+  type: appregistry
+  endpoint: "https://quay.io/cnr"
+  registryNamespace: "kaka"
+  displayName: "opsrcmulti"
+  publisher: "opsrcmulti"
